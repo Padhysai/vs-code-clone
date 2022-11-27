@@ -20,9 +20,9 @@
         <nav class="container mx-auto w-3/4 flex justify-between items-center gap-4">
             <div class="flex items-center">
                 <img class="w-7 max-w-full py-3" src="./assets/logo.png" alt="logo">
-                <span class="text-white px-3 text-lg">Visual Studio Code</span>
+                <span class="text-white px-3 text-lg cursor-pointer">Visual Studio Code</span>
             </div>
-            <ul class="gap-6 items-center grow hidden md:flex">
+            <ul class="gap-6 items-center grow hidden lg:flex">
                 <li class="list-none"><a class="text-gray-500 hover:text-white" href="#">Docs</a></li>
                 <li class="list-none"><a class="text-gray-500 hover:text-white" href="#">Updates</a></li>
                 <li class="list-none"><a class="text-gray-500 hover:text-white" href="#">Blog</a></li>
@@ -31,18 +31,18 @@
                 <li class="list-none"><a class="text-gray-500 hover:text-white" href="#">FAQ</a></li>
                 <li class="list-none"><a class="text-gray-500 hover:text-white" href="#">Learn</a></li>
             </ul>
-            <div class="hidden md:flex">
+            <div class="hidden lg:flex">
                 <div class="flex gap-1 bg-[#3d3d42] p-4 hover:bg-[#525257]">
                     <img class="w-4" src="./assets/search.svg" alt="search">
                     <input class="w-[7rem] bg-[#3d3d42] px-2 active:border-0 hover:bg-[#525257]" type="text"
                         placeholder="Search Docs">
                 </div>
-                <button class="flex gap-1 bg-[#0066B8] p-4 m-0">
+                <button class="flex gap-1 bg-[#0066B8] p-4 m-0 hover:bg-[#005ba4]">
                     <img class="w-4" src="./assets/download.svg" alt="search">
                     <span class="text-white font-semibold">Download</span>
                 </button>
             </div>
-            <img class="cursor-pointer md:hidden"src="./assets/menu-white.svg" alt="menu">
+            <img class="cursor-pointer lg:hidden" src="./assets/menu-white.svg" alt="menu">
         </nav>
     </div>
     <!-- Banner content -->
@@ -56,7 +56,7 @@
                 <h1 class="text-5xl text-white text-center font-light">Code editing.</h1>
                 <h1 class="text-5xl text-white text-center font-normal">Redefined.</h1>
                 <p class="m-3 text-center text-lg text-gray-400 my-4">Free. Built on open source. Runs everywhere.</p>
-                <button class="bg-[#0066B8] p-2 my-4 w-9/12 place-self-center">
+                <button class="bg-[#0066B8] p-2 my-4 w-9/12 place-self-center hover:bg-[#005ba4]">
                     <p class="font-semibold text-white text-lg">Download for Windows</p>
                     <span class="text-white font-light">Stable Build</span>
                 </button>
@@ -66,7 +66,7 @@
                 <p class="text-center text-xs text-gray-500 pt-2">By using VS code, you agree to its</p>
                 <p class="text-center text-[#0098FF] text-xs"><a href="#">license and privacy statement.</a></p>
             </div>
-            <div class="flex-auto md:w-2/3">
+            <div class="flex-auto lg:w-2/3">
                 <img src="./assets/home-screenshot-win.png" alt="Screenshot">
             </div>
         </div>
@@ -98,7 +98,7 @@
             <div class="flex gap-4">
                 <img class="h-16 drop-shadow-md" src="./assets/profile-pic.png" alt="profile-pic">
                 <div class="">
-                    <h2 class="inline text-lg font-semibold">Sai Prasad</h2>
+                    <h2 class="inline text-lg font-semibold hover:text-[#005ba4] cursor-pointer">Sai Prasad</h2>
                     <span class="text-gray-500 text-sm">@saiprasad</span>
                     <p class="font-light">VS code does so many things right. I’m constantly impressed by the UX, and
                         customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
@@ -108,7 +108,7 @@
             <div class="flex gap-4">
                 <img class="h-16 drop-shadow-md" src="./assets/profile-pic.png" alt="profile-pic">
                 <div class="">
-                    <h2 class="inline text-lg font-semibold">Sai Prasad</h2>
+                    <h2 class="inline text-lg font-semibold hover:text-[#005ba4] cursor-pointer">Sai Prasad</h2>
                     <span class="text-gray-500 text-sm">@saiprasad</span>
                     <p class="font-light">VS Code will have deep remote development. You can connect to a container
                         running a different OS and use any VS Code plugins, linting, debugging for that environment.
@@ -118,7 +118,7 @@
             <div class="flex gap-4">
                 <img class="h-16 drop-shadow-md" src="./assets/profile-pic.png" alt="profile-pic">
                 <div class="">
-                    <h2 class="inline text-lg font-semibold">Sai Prasad</h2>
+                    <h2 class="inline text-lg font-semibold hover:text-[#005ba4] cursor-pointer">Sai Prasad</h2>
                     <span class="text-gray-500 text-sm">@saiprasad</span>
                     <p class="font-light">VS Code is my most used and favorite editor. I love being able to customize
                         the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
@@ -130,7 +130,7 @@
 
     <div class="bg-white">
         <div class="container mx-auto w-3/4 py-16 flex flex-col md:flex-row gap-4 md:gap-20">
-            <img src="./assets/home-intellisense.svg" alt="intellisense">
+            <img class="cursor-pointer hover:scale-110 ease-in duration-300"src="./assets/home-intellisense.svg" alt="intellisense">
             <div>
                 <h3 class="font-light text-3xl">Meet IntelliSense.</h3>
                 <p class="font-light text-lg my-10">Go beyond syntax highlighting and autocomplete with IntelliSense,
@@ -147,13 +147,13 @@
                 <p class="font-light text-lg my-10">Debug code right from the editor. Launch or attach to your running
                     apps and debug with break points, call stacks, and an interactive console.</p>
             </div>
-            <img src="./assets/home-debug.svg" alt="intellisense">
+            <img class="cursor-pointer hover:scale-110 ease-in duration-300"src="./assets/home-debug.svg" alt="intellisense">
         </div>
     </div>
 
     <div class="bg-white">
         <div class="container mx-auto w-3/4 py-16 flex flex-col md:flex-row gap-4 md:gap-20">
-            <img src="./assets/home-git.svg" alt="intellisense">
+            <img class="cursor-pointer hover:scale-110 ease-in duration-300"src="./assets/home-git.svg" alt="intellisense">
             <div>
                 <h3 class="font-light text-3xl">Git commands built-in.</h3>
                 <p class="font-light text-lg my-10">Working with Git and other SCM providers has never been easier.
@@ -170,13 +170,13 @@
                 <p class="font-light text-lg my-10">Debug code right from the editor. Launch or attach to your running
                     apps and debug with break points, call stacks, and an interactive console.</p>
             </div>
-            <img class="w-auto md:w-2/4" src="./assets/Hundreds-of-Extensions.png" alt="extesnions">
+            <img class="w-auto md:w-2/4 cursor-pointer hover:scale-110 ease-in duration-300" src="./assets/Hundreds-of-Extensions.png" alt="extesnions">
         </div>
     </div>
 
     <div class="bg-white">
         <div class="container mx-auto w-3/4 py-16 flex flex-col md:flex-row gap-4 md:gap-20">
-            <img src="./assets/home-azure.svg" alt="azure">
+            <img class="cursor-pointer hover:scale-110 ease-in duration-300" src="./assets/home-azure.svg" alt="azure">
             <div>
                 <h3 class="font-light text-3xl">Deploy with confidence and ease</h3>
                 <p class="font-light text-lg my-10">With Microsoft Azure you can deploy and host your React, Angular,
@@ -241,7 +241,7 @@
             </div>
             <p class="text-center text-[#0098FF] text-lg py-2"><a href="#">and many more languages on the
                     Marketplace...</a></p>
-            <button class="p-4 bg-[#0066B8] text-white my-6 mx-auto font-semibold place-self-center">Get Started
+            <button class="p-4 bg-[#0066B8] text-white my-6 mx-auto font-semibold place-self-center hover:bg-[#005ba4]">Get Started
                 Now</button>
         </div>
     </div>
@@ -250,7 +250,7 @@
         <div class="container mx-auto p-16 flex flex-col md:flex-row gap-14 items-center">
             <div class="flex-1 flex flex-col items-center justify-center">
                 <img class="w-36" src="./assets/windows-logo.png" alt="windows-logo">
-                <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs">
+                <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs hover:bg-[#005ba4]">
                     <div class="flex justify-center p-2">
                         <img class="w-6" src="./assets/download.svg" alt="download">
                         <p class="text-white font-semibold text-lg">Windows</p>
@@ -258,28 +258,28 @@
                     <p class="font-light text-xs text-white">Windows 8,10,11</p>
                 </button>
                 <p>User Installer <span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x64</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x86</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Arm64</span></p>
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x64</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x86</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Arm64</span></p>
                 <p>Sys Installer <span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x64</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x86</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Arm64</span></p>
-                <p>.zip <span class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x64</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x86</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Arm64</span></p>
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x64</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x86</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Arm64</span></p>
+                <p>.zip <span class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x64</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x86</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Arm64</span></p>
             </div>
             <div class="flex-1 flex flex-col items-center justify-center">
                 <img class="w-32" src="./assets/linux-logo.png" alt="windows-logo">
                 <div class="flex gap-2">
-                    <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs">
+                    <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs hover:bg-[#005ba4]">
                         <div class="flex justify-center p-2">
                             <img class="w-6" src="./assets/download.svg" alt="download">
                             <p class="text-white font-semibold text-lg">.deb</p>
                         </div>
                         <p class="font-light text-xs text-white">Debian, Ubuntu</p>
                     </button>
-                    <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs">
+                    <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs hover:bg-[#005ba4]">
                         <div class="flex justify-center p-2">
                             <img class="w-6" src="./assets/download.svg" alt="download">
                             <p class="text-white font-semibold text-lg">.rpm</p>
@@ -287,20 +287,20 @@
                         <p class="font-light text-xs text-white">Red Hat, Fedora, SUSE</p>
                     </button>
                 </div>
-                <p>.deb <span class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x64</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x86</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Arm64</span></p>
-                <p>.rpm <span class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x64</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x86</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Arm64</span></p>
+                <p>.deb <span class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x64</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x86</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Arm64</span></p>
+                <p>.rpm <span class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x64</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x86</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Arm64</span></p>
                 <p>.tar.gz <span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x64</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">x86</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Arm64</span></p>
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x64</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">x86</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Arm64</span></p>
             </div>
             <div class="flex-1 flex flex-col items-center justify-center">
                 <img class="w-32" src="./assets/apple-logo.svg" alt="windows-logo">
-                <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs">
+                <button class="bg-[#0066B8] p-1 w-8/12 my-6 max-w-xs hover:bg-[#005ba4]">
                     <div class="flex justify-center p-2">
                         <img class="w-6" src="./assets/download.svg" alt="download">
                         <p class="text-white font-semibold text-lg">Mac</p>
@@ -308,10 +308,10 @@
                     <p class="font-light text-xs text-white">macOS 10,11+</p>
                 </button>
                 <p>.zip <span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Universal</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Intel
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Universal</span><span
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Intel
                         chip</span><span
-                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer">Apple</span></p>
+                        class="bg-[#0066B8] px-2 text-white rounded-md text-sm m-1 cursor-pointer hover:bg-[#005ba4]">Apple</span></p>
             </div>
         </div>
     </div>
